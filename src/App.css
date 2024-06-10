@@ -49,7 +49,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-p {
+.error-message {
   color: red;
   font-size: 14px;
   margin: 5px 0;
