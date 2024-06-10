@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import Welcome from "./welcome";
 import './App.css';
 
 function App() {
@@ -60,7 +62,8 @@ function App() {
   return (
     <div className="App">
       {isLoggedIn ? (
-        <h2 className="welcome">Welcome, {email}!</h2>
+          let navigate = useNavigate(); 
+          navigate(Welcome);
       ) : (
         <div>
           <h2>Login</h2>
